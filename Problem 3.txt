@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   char input[100];
+   cout<<"Enter an expression from any code: "<<endl;
+   cin.getline(input,100);
+   int i=0;
+
+   while(input[i]!='\0')
+   {
+       if(input[i]=='/'&&input[i+1]=='/')
+       {
+           cout<<"Single line comment"<<endl;
+           break;
+       }
+       else if(input[i]=='/'&&input[i+1]=='*')
+       {
+                    cout<<"Multiple line comment"<<endl;
+                    break;
+
+       }
+       i++;
+   }
+
+      if(input[i]=='\0')
+        {
+            cout<<"No comment"<<endl;
+
+        }
+
+
+
+
+    return 0;
+}
+
+

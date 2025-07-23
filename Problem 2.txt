@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+ char opt[100];
+ cout<<"Enter expression : "<<endl;
+ cin>>opt;
+ int i=0;
+
+ while(opt[i]!='\0')
+ {
+
+ if(opt[i]=='+'||opt[i]=='-'||opt[i]=='*'||opt[i]=='/'||opt[i]=='%'||opt[i]=='=')
+ {
+     cout<<"Operators are: "<<opt[i]<<endl;
+ }
+ i++;
+ }
+ return 0;
+}
+
